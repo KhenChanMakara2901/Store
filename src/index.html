@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shoes_Shop</title>
+    <meta name="description" content="Free Shoes_Shop " />
+    <meta
+      name="keywords"
+      content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body
+    class="bg-Cyan-300 text-gray-600 work-sans leading-normal text-base tracking-normal"
+  >
+    <!--Nav-->
+    <nav id="header" class="w-full z-30 top-0 py-1">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"
+      >
+        <label for="menu-toggle" class="cursor-pointer md:hidden block">
+          <svg
+            class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div
+          class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1"
+          id="menu"
+        >
+          <nav>
+            <ul
+              class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0 mr-7"
+            >
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#"
+                  >About US</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="order-1 md:order-2">
+          <a
+            class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+            href="#"
+          >
+            <svg
+              class="fill-current text-gray-800 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5,22h14c1.103,0,2-0.897,2-2V9c0-0.553-0.447-1-1-1h-3V7c0-2.757-2.243-5-5-5S7,4.243,7,7v1H4C3.447,8,3,8.447,3,9v11 C3,21.103,3.897,22,5,22z M9,7c0-1.654,1.346-3,3-3s3,1.346,3,3v1H9V7z M5,10h2v2h2v-2h6v2h2v-2h2l0.002,10H5V10z"
+              />
+            </svg>
+            SHOES SHOP
+          </a>
+        </div>
+
+        <div class="order-2 md:order-3 flex items-center" id="nav-content">
+          <a class="inline-block no-underline hover:text-black" href="#">
+            <svg
+              class="fill-current hover:text-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <circle fill="none" cx="12" cy="7" r="3" />
+              <path
+                d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z"
+              />
+            </svg>
+          </a>
+
+          <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+            <svg
+              class="fill-current hover:text-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z"
+              />
+              <circle cx="10.5" cy="18.5" r="1.5" />
+              <circle cx="17.5" cy="18.5" r="1.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="carousel relative container mx-auto" style="max-width: 1600px">
+      <div class="carousel-inner relative overflow-hidden w-full">
+        <!--Slide 1-->
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-1"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+          checked="checked"
+        />
+        <div class="carousel-item absolute opacity-0" style="height: 110vh">
+          <div
+            class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+            style="
+              background-image: url('https://img.freepik.com/free-vector/set-colored-boots-shows-isolated_1308-33764.jpg?t=st=1719468826~exp=1719472426~hmac=eb6e2e7c8b396c1d16d8cc2fbebf81a3926b3d08d6ee1853eab9616d79c3efab&w=1800');
+            "
+          >
+            <div class="container mx-auto">
+              <div
+                class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide"
+              >
+                <p class="text-black text-2xl my-4"></p>
+                <a
+                  class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-blue hover:border-black"
+                  href="#"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label
+          for="carousel-3"
+          class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+          >‹</label
+        >
+        <label
+          for="carousel-2"
+          class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+          >›</label
+        >
+
+        <!--Slide 2-->
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-2"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+        />
+        <div
+          class="carousel-item absolute opacity-0 bg-cover bg-right"
+          style="height: 120vh"
+        >
+          <div
+            class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
+            style="
+              background-image: url('https://img.freepik.com/premium-photo/collage-blue-sneakers-lot-sports-shoes_186673-7502.jpg?w=1800');
+            "
+          >
+            <div class="container mx-auto">
+              <div
+                class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide"
+              >
+                <p class="text-black text-2xl my-4"></p>
+                <a
+                  class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
+                  href="#"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label
+          for="carousel-1"
+          class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+          >‹</label
+        >
+        <label
+          for="carousel-3"
+          class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+          >›</label
+        >
+
+        <!--Slide 3-->
+        <input
+          class="carousel-open"
+          type="radio"
+          id="carousel-3"
+          name="carousel"
+          aria-hidden="true"
+          hidden=""
+        />
+        <div class="carousel-item absolute opacity-0" style="height: 120vh">
+          <div
+            class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom"
+            style="
+              background-image: url('https://img.freepik.com/free-vector/sport-shoes-sneakers-set_74855-313.jpg?t=st=1719468463~exp=1719472063~hmac=a3dea5e99303068062930ca94ff9c87eb091968e906800c16372dede63bb548d&w=1800');
+            "
+          >
+            <div class="container mx-auto">
+              <div
+                class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide"
+              >
+                <p class="text-black text-2xl my-4"></p>
+                <a
+                  class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-gray-900 hover:border-black"
+                  href="#"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label
+          for="carousel-2"
+          class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+          >‹</label
+        >
+        <label
+          for="carousel-1"
+          class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+          >›</label
+        >
+
+        <!-- Add additional indicators for each slide-->
+        <ol class="carousel-indicators">
+          <li class="inline-block mr-3">
+            <label
+              for="carousel-1"
+              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900"
+              >•</label
+            >
+          </li>
+          <li class="inline-block mr-3">
+            <label
+              for="carousel-2"
+              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900"
+              >•</label
+            >
+          </li>
+          <li class="inline-block mr-3">
+            <label
+              for="carousel-3"
+              class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900"
+              >•</label
+            >
+          </li>
+        </ol>
+      </div>
+    </div>
+    <section class="bg-white py-8">
+      <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+        <nav id="store" class="w-full z-30 top-0 px-6 py-1">
+          <div
+            class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3"
+          >
+            <a
+              class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl"
+              href="#"
+            >
+              Product
+            </a>
+
+            <div class="flex items-center" id="store-nav-content">
+              <a
+                class="pl-3 inline-block no-underline hover:text-black"
+                href="#"
+              >
+                <svg
+                  class="fill-current hover:text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
+                </svg>
+              </a>
+
+              <a
+                class="pl-3 inline-block no-underline hover:text-black"
+                href="#"
+              >
+                <svg
+                  class="fill-current hover:text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/nike-air-prestoe-flyk-black-white-generative-ai_900101-59192.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Multicolor Adidas Yeezy Boost 700 Wave Runner</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">299.99$</p>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/pair-orange-shoes-with-white-laces-word-sport-bottom_771335-53380.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Striped Leather Adidas Yeezy 700 V3</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">3000.99$</p>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/close-up-pair-sneakers-with-green-white-design-generative-ai_927978-10457.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 350 V2 ISRAFIL</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">400.99$</p>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/pair-rainbow-colored-running-shoes-with-word-rainbow-bottom_771335-53390.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Canvas Adidas Yeezy Boost 700 Wave Runner, Sporte</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">7000.99$</p>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/close-up-pair-black-green-sneakers-generative-ai_899894-55082.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 700 Wave Runner Solid Grey</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">400.99$</p>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/running-shoes-with-white-background-high-quality-ul_889056-9101.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 700 V2 Tephra</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">500.99$</p>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/running-shoes-with-white-background-high-quality-ul_889056-9104.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy Boost 350 V2 MX Oat</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">600.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/pair-trainers_144627-3798.jpg?t=st=1719325566~exp=1719329166~hmac=1d39339aa59b715e1af9ef171229c4e7e3d2459ab912a4113059a6df8e443256&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy Boost 350 V2 Core Black blue</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">500.67$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/men-shoes_1203-8654.jpg?t=st=1719325693~exp=1719329293~hmac=c44b792e8da697c7b4e1b3872503c1704daec304eba78507e8743298cb433aad&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 700 V2 Vanta</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">800.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/sport-shoes-running_1203-7549.jpg?t=st=1719325824~exp=1719329424~hmac=1cbd5c1877c4e84bbc8cca11906c4cc8313793fa86f48f82f180b9f90f5486ef&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy Boost 350 V2 MX Dark Sea Salt</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">999.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/shoes_1203-8103.jpg?t=st=1719325950~exp=1719329550~hmac=25ff918a09ef781c68ceac727a4107f31f0536aa6c60818e850aca8eef29c294&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 700 Analog</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">40.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/sport-running-shoes_1203-3414.jpg?t=st=1719326109~exp=1719329709~hmac=9966edf8057de73196e07d0d236be840562a069fe58c4ce98d734f9a190bb63c&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 700 Enflame Amber</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">1000.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/fashion-shoes-sneaker_1203-8063.jpg?t=st=1719326232~exp=1719329832~hmac=655d710841e4a3e5343b2d3fa5ee4ee462ad7e9aab63b4dc3b64b30f6bc79688&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy Boost 350 V2 Hyperspace</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">500.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/shoes_1203-8154.jpg?t=st=1719373052~exp=1719376652~hmac=a96a791619ff633336218fbd3e88ef4a9cc42fcfa69b45f8737903beed307e22&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 350 V2 Carbon Beluga</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">700.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-psd/classic-sneaker-sport-street-wear-fashionable-athletic-apparelblue-green_1100418-705.jpg?w=1480"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy Boost 350 V2 Black Red</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">400$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/sport-new-lifestyle-fashion-sneakers_1203-6399.jpg?ga=GA1.1.795286052.1717783717&semt=ais_user"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Adidas Yeezy 700 Faded Azure</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">350$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/men-shoes_1203-8388.jpg?t=st=1719463922~exp=1719467522~hmac=18483ca6bcdb243e948971cd53d3cb5ff0f72e253bb8ed3b9e66ebd217e5cc6f&w=1800"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">GEL-CONTEND 4B+ Running Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">800$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/fashion-shoes_74190-2601.jpg?t=st=1719464149~exp=1719467749~hmac=d04b8aace647ea929b6deee0dde80f36042e5cb3782d9a67c16557e907358912&w=740"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Lite Sports Shoes Running Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">900$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/cute-ideas-golf-shoes-children-with-synthetic-material-white-color-creative-new-concept-design_1020495-55548.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Trendy & Stylish Running Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">900$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/indian-made-men-s-sport-shoes_1059911-46487.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Lite Sports Shoes Running Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">700.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/illustration-boys-sneakers-pair-design_884630-9012.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">4020 Cricket Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">500.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/white-blue-sneaker_1115439-22790.jpg?w=2000"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Glister Badminton Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">1000.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/free-photo/black-fashion-gumshoes_144627-9653.jpg?t=st=1719464914~exp=1719468514~hmac=026fda561d1662ea2b20f5f80fd6066d8f2b42988005bb7dc5c0b0b22fdb342e&w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">PRO ENCOUNTER 10 Football Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">600.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/pair-black-sport-shoes-isolated-white-background_707345-574.jpg?w=1380"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">MIKE (N) Running Shoes For Men (Multicolor)</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">800.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/sneak-peek-into-sporty-isolation_942559-22020.jpg?w=900"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Athleisure Sports Shoes for Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">400.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/men-s-shoes-jogging-isolated-white-background_94064-356.jpg?w=996"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Training & Gym Shoes For Men</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">500.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/running-shoes-isolated-white-background-sport-shoes-studio-shot_900706-24716.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Nike for man/women Runner</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">400.99$</p>
+          </a>
+        </div>
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="https://img.freepik.com/premium-photo/pair-green-sneakers-isolated-white-background_956363-17257.jpg?w=1060"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="">Shoes For Men Stylish Comfortable Lightweight</p>
+              <svg
+                class="h-6 w-6 fill-current text-gray-500 hover:text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z"
+                />
+              </svg>
+            </div>
+            <p class="pt-1 text-gray-900">600.99$</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <header class="text-center">
+          <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">SHOP</h2>
+
+          <p class="mx-auto mt-4 max-w-md text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+            praesentium cumque iure dicta incidunt est ipsam, officia dolor
+            fugit natus?
+          </p>
+        </header>
+
+        <ul class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
+          <li>
+            <a href="#" class="group relative block">
+              <img
+                src="https://img.freepik.com/free-photo/close-up-futuristic-sneakers_23-2151005651.jpg?t=st=1719395535~exp=1719399135~hmac=fa77cb318454ff830c9c2b5cd1e4937363fb1c31b6b88a31179efd2d451b7d2b&w=740"
+                alt=""
+                class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+              />
+
+              <div
+                class="absolute inset-0 flex flex-col items-start justify-end p-6"
+              >
+                <h3 class="text-xl font-medium text-white">Casual Trainers</h3>
+
+                <span
+                  class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                >
+                  Shop Now
+                </span>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="group relative block">
+              <img
+                src="https://img.freepik.com/free-photo/futuristic-football-game-shoe_23-2151153045.jpg?t=st=1719395625~exp=1719399225~hmac=769a357ddcfdb2509edffca6f6b699bb30144e7aa132aba437da6e46ec4bf90a&w=1060"
+                alt=""
+                class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+              />
+
+              <div
+                class="absolute inset-0 flex flex-col items-start justify-end p-6"
+              >
+                <h3 class="text-xl font-medium text-white">Winter Jumpers</h3>
+
+                <span
+                  class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                >
+                  Shop Now
+                </span>
+              </div>
+            </a>
+          </li>
+
+          <li class="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            <a href="#" class="group relative block">
+              <img
+                src="https://img.freepik.com/free-vector/running-sport-shoes-illustration_1284-17528.jpg?t=st=1719466368~exp=1719469968~hmac=bb77db6bac9546449f7cacef4b72e8c91f9584cec0fcde6fbd397ba076f99e08&w=1800"
+                alt=""
+                class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+              />
+
+              <div
+                class="absolute inset-0 flex flex-col items-start justify-end p-6"
+              >
+                <h3 class="text-xl font-medium text-white">
+                  Skinny Jeans Blue
+                </h3>
+
+                <span
+                  class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                >
+                  Shop Now
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="bg-white py-24 sm:py-32">
+      <div
+        class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3"
+      >
+        <div class="max-w-2xl">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            SERVICE
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
+            elementum enim vitae ullamcorper suspendisse.
+          </p>
+        </div>
+        <ul
+          role="list"
+          class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+        >
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Mr.Sothearith
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  Manager at servis shoes / Service1
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Mr.Sovann
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  as a bissness at servis shoes/ Service2
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full"
+                src="https://www.shutterstock.com/image-photo/close-head-shot-portrait-preppy-600nw-1433809418.jpg"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Ms.Danny
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  Head of Production Planning and Controlling of M. Room/
+                  Service3
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center gap-x-6">
+              <img
+                class="h-16 w-16 rounded-full"
+                src="https://play-lh.googleusercontent.com/LqgSQHWNv9Dc7DS_J3BgYfZviCti_RBgQNDUHqFWqMLkdhbBxXOQy7cacNXCz5mSMqQ"
+                alt=""
+              />
+              <div>
+                <h3
+                  class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  Ms.Panha
+                </h3>
+                <p class="text-sm font-semibold leading-6 text-indigo-600">
+                  Store Manager Service shose/ Maneger
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <!-- More people... -->
+        </ul>
+      </div>
+    </div>
+
+    <footer class="px-4 py-20 text-white bg-black">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid grid-cols-2 gap-4 mb-3 md:grid-cols-5">
+          <a
+            href="/"
+            title="Go to Kutty Home Page"
+            class="col-span-2 mb-12 md:col-span-1"
+          >
+            <svg
+              class="w-auto h-6"
+              width="86"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 335 93"
+            >
+              <path
+                d="M134.71 45.7599c1.32-1.44 2.67-2.94 4.05-4.5 1.44-1.56 2.82-3.09 4.14-4.59 1.32-1.56 2.55-3.03 3.69-4.41 1.2-1.38 2.22-2.58 3.06-3.6h15.93c-3.18 3.66-6.3 7.17-9.36 10.53-3 3.3-6.3 6.72-9.9 10.26 1.8 1.62 3.66 3.57 5.58 5.85 1.92 2.22 3.78 4.53 5.58 6.93 1.8 2.4 3.45 4.8 4.95 7.2 1.5 2.4 2.76 4.59 3.78 6.57h-15.39c-.96-1.56-2.07-3.27-3.33-5.13-1.2-1.92-2.49-3.81-3.87-5.67-1.38-1.92-2.85-3.75-4.41-5.49-1.5-1.74-3-3.21-4.5-4.41v20.7H121.3V8.31991l13.41-2.16V45.7599zM209.35 74.3799c-2.28.66-5.22 1.26-8.82 1.8-3.6.6-7.38.9-11.34.9-4.02 0-7.38-.54-10.08-1.62-2.64-1.08-4.74-2.58-6.3-4.5-1.56-1.98-2.67-4.32-3.33-7.02-.66-2.7-.99-5.67-.99-8.91v-26.37h13.41v24.75c0 4.32.57 7.44 1.71 9.36 1.14 1.92 3.27 2.88 6.39 2.88.96 0 1.98-.03 3.06-.09 1.08-.12 2.04-.24 2.88-.36v-36.54h13.41v45.72zM217.888 16.8699l13.41-2.16v13.95h16.11v11.16h-16.11v16.65c0 2.82.48 5.07 1.44 6.75 1.02 1.68 3.03 2.52 6.03 2.52 1.44 0 2.91-.12 4.41-.36 1.56-.3 2.97-.69 4.23-1.17l1.89 10.44c-1.62.66-3.42 1.23-5.4 1.71-1.98.48-4.41.72-7.29.72-3.66 0-6.69-.48-9.09-1.44-2.4-1.02-4.32-2.4-5.76-4.14-1.44-1.8-2.46-3.96-3.06-6.48-.54-2.52-.81-5.31-.81-8.37v-39.78zM254.279 16.8699l13.409-2.16v13.95h16.11v11.16h-16.11v16.65c0 2.82.48 5.07 1.44 6.75 1.02 1.68 3.03 2.52 6.03 2.52 1.44 0 2.91-.12 4.41-.36 1.56-.3 2.97-.69 4.23-1.17l1.891 10.44c-1.62.66-3.421 1.23-5.401 1.71s-4.409.72-7.289.72c-3.66 0-6.691-.48-9.091-1.44-2.4-1.02-4.32-2.4-5.76-4.14-1.44-1.8-2.459-3.96-3.059-6.48-.54-2.52-.81-5.31-.81-8.37v-39.78zM334.028 28.6599c-2.7 9.12-5.52 17.67-8.46 25.65-2.94 7.98-6.15 15.72-9.63 23.22-1.26 2.7-2.52 4.98-3.78 6.84-1.26 1.92-2.64 3.48-4.14 4.68-1.5 1.26-3.21 2.16-5.13 2.7-1.86.6-4.05.9-6.57.9-2.1 0-4.05-.21-5.85-.63-1.74-.36-3.18-.78-4.32-1.26l2.34-10.71c1.38.48 2.61.81 3.69.99 1.08.18 2.22.27 3.42.27 2.4 0 4.23-.66 5.49-1.98 1.32-1.26 2.43-3.03 3.33-5.31-3.06-6-6.12-12.72-9.18-20.16-3.06-7.5-5.94-15.9-8.64-25.2h14.22c.6 2.34 1.29 4.89 2.07 7.65.84 2.7 1.71 5.46 2.61 8.28.9 2.76 1.8 5.46 2.7 8.1.96 2.64 1.86 5.04 2.7 7.2.78-2.16 1.59-4.56 2.43-7.2.84-2.64 1.65-5.34 2.43-8.1.84-2.82 1.62-5.58 2.34-8.28.78-2.76 1.47-5.31 2.07-7.65h13.86z"
+                fill="#FFFFFF"
+              />
+              <path
+                d="M5.61825.4114C24.3953-2.95442 43.4551 21.1695 51.21 34.8757v29.6906c-4.8347 14.2497-12.952 19.1401-20.8473 19.362-12.7347.358-22.758-14.27-17.6881-25.9574 2.926-6.7451 8.905-10.1655 13.0016-11.2189C5.61473 45.9161.32294 23.2628.01461 7.98884-.05756 4.41366 2.09844 1.04233 5.61825.4114z"
+                fill="#9E58E9"
+              />
+              <path
+                d="M96.8018.4114C78.0247-2.95442 58.9649 21.1695 51.21 34.8757v29.6906c4.8347 14.2497 12.952 19.1401 20.8474 19.362 12.7346.358 22.7579-14.27 17.688-25.9574-2.9259-6.7451-8.905-10.1655-13.0015-11.2189 20.0614-.8359 25.3531-23.4892 25.6611-38.76316.073-3.57518-2.083-6.94651-5.6032-7.57744z"
+                fill="#7629C8"
+              />
+            </svg>
+            <span class="sr-only">Kutty Home Page</span>
+          </a>
+          <nav class="mb-8">
+            <p
+              class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase"
+            >
+              Product
+            </p>
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Features</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Integrations</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Documentation</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >FAQs</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Pricing</a
+            >
+          </nav>
+          <nav class="mb-8">
+            <p
+              class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase"
+            >
+              About
+            </p>
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Press-Kit</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Company</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Privacy</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Blog</a
+            >
+          </nav>
+          <nav class="mb-8">
+            <p
+              class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase"
+            >
+              Contact
+            </p>
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Twitter</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Instagram</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Email</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Advertising</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Chat</a
+            >
+          </nav>
+          <nav class="mb-8">
+            <p
+              class="mb-3 text-xs font-bold tracking-wider text-gray-500 uppercase"
+            >
+              Legal
+            </p>
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Cookie Policy</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Affiliate Program</a
+            >
+            <a
+              href="#"
+              class="flex mb-3 text-sm font-medium transition md:mb-2 hover:text-primary"
+              >Manage Cookies</a
+            >
+          </nav>
+        </div>
+        <p class="text-sm font-medium text-left text-gray-600 md:text-center">
+          © Copyright 2020 Skcript Inc. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
